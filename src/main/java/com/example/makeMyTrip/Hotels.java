@@ -8,6 +8,6 @@ public class Hotels {
     }
     @GetMapping("/hotels")
     public String getData(){
-        return "Book your Hotel for Goa location";
+        return "Book your Hotel for Goa location, get 10% discount!!";
     }
 }
