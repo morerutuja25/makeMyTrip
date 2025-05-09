@@ -12,7 +12,7 @@
 	<artifactId>makeMyTrip</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>makeMyTrip</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot Test</description>
 	<url/>
 	<licenses>
 		<license/>
