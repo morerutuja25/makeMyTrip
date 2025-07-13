@@ -18,26 +18,30 @@ pipeline {
                 echo 'Code Compilation Completed Successfully!'
             }
         }
+
         stage('Code QA Execution') {
             steps {
                 echo 'Running JUnit Test Cases...'
-                sh 'mvn clean test'
+                sh 'mvn test'
                 echo 'JUnit Test Cases Completed Successfully!'
             }
         }
+
         stage('Code Package') {
             steps {
                 echo 'Creating WAR Artifact...'
-                sh 'mvn clean package'
+                sh 'mvn package'
                 echo 'WAR Artifact Created Successfully!'
             }
         }
     }
+
     post {
-            success {
-                echo 'Pipeline completed successfully.'
-            }
-            failure {
-                echo 'Pipeline failed.'
-            }
+        success {
+            echo 'Pipeline completed successfully.'
+        }
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
 }
