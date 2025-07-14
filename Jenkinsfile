@@ -21,10 +21,10 @@ pipeline {
 
         stage('Code QA Execution') {
             steps {
-                echo 'Running JUnit Test Cases...'
+                echo 'Running JUnit Test Cases.'
 
                 sh 'mvn clean test'
-                echo 'JUnit Test Cases Completed Successful!!'
+                echo 'JUnit Test Cases Completed Successfully!!!'
             }
         }
 
