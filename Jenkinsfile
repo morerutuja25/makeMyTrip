@@ -1,9 +1,10 @@
 pipeline {
 
-    agent any
+    agent {label 'teamA-js'}
 
     options {
         buildDiscarder(logRotator(numToKeepStr: '3', artifactNumToKeepStr: '3'))
+        // keep last 3 logs, other will delete 
     }
 
     tools {
